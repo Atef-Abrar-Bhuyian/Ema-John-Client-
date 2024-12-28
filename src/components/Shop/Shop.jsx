@@ -113,7 +113,7 @@ const Shop = () => {
         </button>
         {pages.map((page) => (
           <button
-            className={currentPage === page && "selected"}
+            className={currentPage === page ? "selected" : ""}
             key={page}
             onClick={() => setCurrentPage(page)}
           >
